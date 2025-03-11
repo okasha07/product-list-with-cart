@@ -50,8 +50,11 @@ A responsive product list project featuring a functional cart that allows users 
 
 ## Screenshots
 
-- **Mobile:** `./screenshot/phone`
-- **Desktop:** `./screenshot/desktop`
+### 📱 Mobile View  
+![Mobile Screenshot](./assets/screenshots/phone.png)
+
+### 💻 Desktop View  
+![Desktop Screenshot](./assets/screenshots/desktop.png)
 
 ## Connect with Me
 
