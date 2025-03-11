@@ -51,10 +51,10 @@ A responsive product list project featuring a functional cart that allows users 
 ## Screenshots
 
 ### 📱 Mobile View  
-![Mobile Screenshot](./screenshots/phone.png)
+![Mobile Screenshot](./screenshot/phone.png)
 
 ### 💻 Desktop View  
-![Desktop Screenshot](./screenshots/desktop.png)
+![Desktop Screenshot](./screenshot/desktop.png)
 
 ## Connect with Me
 
