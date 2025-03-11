@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font: Red Hat Text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          colors: {
+            white: "#fff",
+            red: "hsl(14, 86%, 42%)",
+            green: "hsl(159, 69%, 38%)",
+            rose: {
+              50: "hsl(20, 50%, 98%)",
+              100: "hsl(13, 31%, 94%)",
+              300: "hsl(14, 25%, 72%)",
+              400: "hsl(7, 20%, 60%)",
+              500: "hsl(12, 20%, 44%)",
+              900: "hsl(14, 65%, 9%)",
+            },
+          },
+          fontFamily: {
+            redhat: ["Red Hat Text", "sans-serif"],
+          },
+          fontSize: {
+            product: "16px",
+          },
+        },
+      };
+    </script>
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body class="font-redhat bg-rose-50">
+    <main
+      class="flex pl-10 pr-5 py-10 justify-between lg:gap-10 max-lg:gap-5 flex-col lg:flex-row max-md:p-5"
+    >
+      <div class="desserts">
+        <h1 class="text-[2rem] font-bold mb-5">Desserts</h1>
+        <div
+          id="products"
+          class="products grid gap-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1"
+        ></div>
+      </div>
+      <div
+        class="cart bg-white p-6 rounded-lg max-w-sm w-full max-h-72 min-h-64"
+      >
+        <h1 class="text-red text-[1.5rem] font-bold mb-4 total-orders">
+          Your Cart (0)
+        </h1>
+        <div
+          class="flex justify-center items-center flex-col w-full h-full cart-orders"
+        >
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="empty cart"
+          />
+          <p class="text-rose-500 font-semibold text-[14px]">
+            Your added items will appear here
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
