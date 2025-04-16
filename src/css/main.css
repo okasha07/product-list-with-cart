@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "RedHatText";
+  src: url("/src/assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "RedHatText", sans-serif;
+  @apply bg-rose-50;
+}
+
+/* Main Page Style */
+
+.main {
+  @apply flex justify-between p-8 lg:pr-12 md:gap-8 max-[1199px]:flex-col;
+}
+
+.desserts {
+  @apply text-xl text-rose-900 text-[2rem] font-bold mb-5;
+}
+
+.product-holder {
+  @apply grid gap-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1;
+}
+
+.cart {
+  @apply bg-white p-6 rounded-lg max-w-sm w-full h-fit mt-5;
+}
+
+.empty-orders {
+  @apply flex justify-center items-center flex-col w-full h-full;
+}
+
+/* Product Style */
+.product {
+  @apply min-w-[185px];
+}
+
+.product .cart-media-action {
+  @apply mb-8 relative;
+}
+
+.product-img {
+  @apply rounded-lg w-full transition-all;
+}
+
+.product-img.active {
+  @apply border-[3px] border-red border-solid;
+}
+
+.product-btn {
+  @apply flex items-center justify-center gap-2 rounded-full py-2 w-2/3  absolute left-1/2 -bottom-5 -translate-x-1/2 select-none;
+}
+
+.product-btn.add {
+  @apply border border-rose-300 bg-white font-medium hover:text-red hover:border-red transition-colors;
+}
+
+.product-btn.counter {
+  @apply bg-red justify-evenly text-white;
+}
+
+.product-btn.counter > :not(:nth-child(2)) {
+  @apply w-[18px] h-[18px] p-[2px]  font-medium  flex items-center justify-center border border-white rounded-[50%] hover:stroke-red hover:bg-white;
+}
+
+.product-category {
+  @apply text-rose-400;
+}
+
+.product-name {
+  @apply text-rose-900 font-semibold;
+}
+
+.product-price {
+  @apply text-red font-semibold;
+}
+
+/* End Product Style */
+
+/* Cart Style */
+.cart-amount {
+  @apply text-red text-2xl font-bold;
+}
+
+/* Cart Summary Section */
+.checkout-order-list {
+  @apply mt-3 mb-5;
+}
+
+.order {
+  @apply flex items-center justify-between border-b border-solid border-rose-300 pb-2 mb-3;
+}
+
+.order-name {
+  @apply font-semibold text-rose-900;
+}
+
+.order-price-details {
+  @apply flex items-center mt-1;
+}
+
+.order-amount {
+  @apply min-w-6 mr-2 font-semibold text-red;
+}
+
+.order-price {
+  @apply w-16 mr-1 text-rose-400;
+}
+
+.order-total {
+  @apply font-semibold text-rose-500;
+}
+
+.delete {
+  @apply border-2 border-solid border-rose-400 text-rose-400 font-semibold rounded-[50%] flex items-center justify-center p-1 hover:stroke-black hover:border-black transition-colors;
+}
+
+.orders-total {
+  @apply flex items-center justify-between mb-4;
+}
+
+.orders-total-label {
+  @apply text-rose-500 font-medium;
+}
+
+.orders-total-price {
+  @apply text-2xl text-rose-900 font-bold;
+}
+
+.carbon-neutral {
+  @apply flex items-center justify-center gap-1 rounded-md bg-rose-50 p-3;
+}
+
+.confirm-order {
+  @apply bg-red text-white text-center rounded-full p-3 mt-3 w-full hover:bg-[#952c0c] transition-colors;
+}
+/* End Cart Summary Section */
+
+/* Empty Cart */
+.empty-cart {
+  @apply flex flex-col items-center gap-5 my-4;
+}
+
+.empty-label {
+  @apply text-sm text-rose-500 font-semibold select-none;
+}
+/* End Empty Cart */
+
+/* Confirmed Orders */
+.confirmed-dialog {
+  @apply w-full h-full fixed left-0 top-0 flex items-center justify-center bg-[#00000040] px-3;
+}
+
+.order-confirmation {
+  @apply bg-white rounded-lg p-5 max-w-lg min-w-64 w-full;
+}
+
+.order-confirmation-title {
+  @apply text-3xl text-rose-900 font-bold mt-4 mb-1;
+}
+
+.confirmed-label {
+  @apply text-rose-400 font-medium mb-4;
+}
+
+.confirmed-orders-list {
+  @apply bg-rose-50 p-4 rounded-lg max-h-80 overflow-y-scroll;
+}
+
+.confirmed-order {
+  @apply flex items-center border-b border-solid border-rose-100 pb-2 mb-2;
+}
+
+.confirmed-order-img {
+  @apply w-16 mr-3 rounded-md;
+}
+
+.order-item-name {
+  @apply text-rose-900 font-medium;
+}
+
+.order-item-details {
+  @apply flex items-center gap-5 mt-1;
+}
+
+.order-item-amount {
+  @apply font-semibold text-red;
+}
+
+.order-item-price {
+  @apply text-rose-400;
+}
+
+.order-item-total-price {
+  @apply ml-auto text-rose-900 font-semibold;
+}
+
+.total-orders-details {
+  @apply flex items-center justify-between pt-2;
+}
+
+.total-confirmed-orders-label {
+  @apply text-sm font-semibold text-rose-900;
+}
+
+.order-total-price {
+  @apply text-xl text-rose-900 font-bold;
+}
+
+.new-order {
+  @apply bg-red text-white text-center w-full p-3 mt-7 rounded-full hover:bg-[#952c0c] transition-colors;
+}
+
+/* End Confirmed Orders */
